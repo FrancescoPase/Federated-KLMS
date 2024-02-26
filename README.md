@@ -1,7 +1,7 @@
 # Adaptive Compression in Federated Learning via Side Information
 PyTorch implementation of the KLMS framework by the authors of the AISTATS 2024 paper "Adaptive Compression in Federated Learning via Side Information".
 
-> [Adaptive Compression in Federated Learning via Side Information]([https://arxiv.org/pdf/2209.15328.pdf](https://arxiv.org/pdf/2306.12625.pdf) <br/>
+> [Adaptive Compression in Federated Learning via Side Information](https://arxiv.org/pdf/2306.12625.pdf) <br/>
 >[Berivan Isik](https://sites.google.com/view/berivanisik), [Francesco Pase](https://sites.google.com/view/pasefrance), [Deniz Gunduz](https://www.imperial.ac.uk/people/d.gunduz),  [Sanmi Koyejo](https://cs.stanford.edu/people/sanmi/), [Tsachy Weissman](https://web.stanford.edu/~tsachy/), [Michele Zorzi](https://signet.dei.unipd.it/zorzi/) <br/>
 > The 27th International Conference on Artificial Intelligence and Statistics (AISTATS), 2024. <br/>
 
