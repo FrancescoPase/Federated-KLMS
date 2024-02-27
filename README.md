@@ -11,3 +11,15 @@ Packages can be found in `federated_klms.yml`.
 
 ## Training:
 TBD.
+
+## References:
+If you find this work useful in your research, please consider citing our paper:
+
+```
+@article{isik2023communication,
+  title={Communication-Efficient Federated Learning through Importance Sampling},
+  author={Isik, Berivan and Pase, Francesco and Gunduz, Deniz and Koyejo, Sanmi and Weissman, Tsachy and Zorzi, Michele},
+  journal={arXiv preprint arXiv:2306.12625},
+  year={2023}
+}
+```
