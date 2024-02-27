@@ -7,7 +7,7 @@ PyTorch implementation of the KLMS framework by the authors of the AISTATS 2024 
 
 
 ## Environment setup:
-Packages can be found in `fedpm.yml`.
+Packages can be found in `federated_klms.yml`.
 
 ## Training:
 Set the `params_path` in `main.py` to the the path of the `{}.yaml` file with the desired model and dataset. The default parameters can be found in the provided `{}.yaml` files. To train the model, run:
