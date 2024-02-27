@@ -6,12 +6,6 @@ PyTorch implementation of the KLMS framework by the authors of the AISTATS 2024 
 > The 27th International Conference on Artificial Intelligence and Statistics (AISTATS), 2024. <br/>
 
 
-## Environment setup:
-Packages can be found in `federated_klms.yml`.
-
-## Training:
-TBD.
-
 ## References:
 If you find this work useful in your research, please consider citing our paper:
 
