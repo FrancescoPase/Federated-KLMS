@@ -1,0 +1,88 @@
+# Simulation parameters
+
+path:
+  path: 'params.yaml'
+
+simulation:
+  tot_sims: 1
+  fraction_fit: 1.0
+  fraction_evaluate: 0
+  n_clients: 10
+  n_rounds: 400
+  verbose: 0
+  store_output: True
+  strategy: 'lsd' # [lsd, fedpm, dense]
+
+# Parameters for the neural networks
+model :
+  id: 'LeNet' # [Conv8/6/4, LeNet, Mask, Conv6]
+  mode: 'dense' # [mask, dense]
+  local_epochs: 3
+  activation: 'relu'
+  agg_steps: 5
+
+
+# Parameters for the dataset
+data:
+  dataset: 'mnist' # [cifar10, mnist]
+  data_path: '/home/signet/Documenti/repo/flower_fl/data'
+  split: 'iid' # {iid, non-iid}
+  classes_pc: 4
+  minibatch_size: 64 #32
+
+lsd:
+  svrg_epoch: 0
+  server_lr: 0.00001
+  weight_decay: 5
+  local_epochs: 1
+  use_memory_term: 0
+
+fedpm:
+  local_epochs: 3
+  local_lr: 0.1
+
+fedavg: # When compress==False
+  local_lr: 0.0003
+  server_lr: 0.1
+
+dense:
+  local_epochs: 3
+
+sign_sgd:
+  local_lr: 0.01
+  server_lr: 0.0002
+
+sign_sgd_rec:
+  local_lr: 0.01
+  server_lr: 0.002
+
+qsgd:
+  local_lr: 0.0003
+  server_lr: 0.1
+  num_level: 2
+
+qsgd_rec:
+  local_lr: 0.0003
+  server_lr: 0.005
+
+compressor:
+  compress: True
+  type: 'lsd_rec' # {lsd_rec, qlsd, fedpm_rec, sign_sgd, sign_sgd_rec, qsgd, qsgd_rec}
+  rec:
+    adaptive: True
+    num_samples: 2
+    warm_up_num_samples: [ 8, 8, 8, 8, 8, 7, 6, 5, 4, 3  ] #[ 8, 8, 8, 8, 8, 7, 6, 5, 4, 3 ]
+    block_size: 8
+    kl_rate: 2
+  qlsd:
+    compression_parameter: 5
+
+
+ray_init_args:
+  ignore_reinit_error: True
+  include_dashboard: True
+  num_cpus: 6
+  num_gpus: 1
+  local_mode: False
+
+
