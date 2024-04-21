@@ -10,10 +10,12 @@ PyTorch implementation of the KLMS framework by the authors of the AISTATS 2024 
 If you find this work useful in your research, please consider citing our paper:
 
 ```
-@article{isik2023communication,
-  title={Communication-Efficient Federated Learning through Importance Sampling},
+@inproceedings{isik2024adaptive,
+  title={Adaptive Compression in Federated Learning via Side Information},
   author={Isik, Berivan and Pase, Francesco and Gunduz, Deniz and Koyejo, Sanmi and Weissman, Tsachy and Zorzi, Michele},
-  journal={arXiv preprint arXiv:2306.12625},
-  year={2023}
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={487--495},
+  year={2024},
+  organization={PMLR}
 }
 ```
